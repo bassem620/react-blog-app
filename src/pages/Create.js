@@ -22,7 +22,7 @@ const Create = () => {
   }
 
   return (
-    <div className="create card shadow-sm p-4">
+    <div className="create card shadow-sm p-4 mx-2">
       <h2 className="text-primary">Add New Blog</h2>
       <form onSubmit={handleSubmit}>
         <label>Blog Title:</label>
