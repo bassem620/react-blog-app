@@ -22,8 +22,8 @@ const Create = () => {
   }
 
   return (
-    <div className="create">
-      <h2>Add New Blog</h2>
+    <div className="create card shadow-sm p-4">
+      <h2 className="text-primary">Add New Blog</h2>
       <form onSubmit={handleSubmit}>
         <label>Blog Title:</label>
         <input 
@@ -46,7 +46,7 @@ const Create = () => {
           <option value="Bassem">Bassem</option>
           <option value="N/A">N/A</option>
         </select>
-        <button>Add Blog</button>
+        <button className="btn btn-outline-primary">Add Blog</button>
       </form>
     </div>
   );
