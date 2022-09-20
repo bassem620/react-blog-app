@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
-  const [author, setAuthor] = useState('Bassem');
+  const [author, setAuthor] = useState('');
   const navigate = useNavigate();
 
   // Handle Submit
@@ -22,7 +22,7 @@ const Create = () => {
   }
 
   return (
-    <div className="create card shadow-sm p-4 mx-2">
+    <div className="create card shadow-sm p-4 mx-2 mx-md-auto">
       <h2 className="text-primary">Add New Blog</h2>
       <form onSubmit={handleSubmit}>
         <label>Blog Title:</label>
@@ -39,13 +39,12 @@ const Create = () => {
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
         <label>Blog author:</label>
-        <select
+        <input
+          type="text"
+          required
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
-        >
-          <option value="Bassem">Bassem</option>
-          <option value="N/A">N/A</option>
-        </select>
+        />
         <button className="btn btn-outline-primary">Add Blog</button>
       </form>
     </div>

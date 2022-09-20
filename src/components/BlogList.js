@@ -8,7 +8,7 @@ const BlogList = ({blogs}) => {
           blogs.map(blog => {
             return (
               <Link to={`/blogs/${blog.id}`} style={{ textDecoration: 'none' }}>
-                <div className="card shadow-sm" key={blog.id}>
+                <div className="card shadow-sm blog" key={blog.id}>
                   <div className="card-body">
                     <h4 className='card-title text-primary'>{blog.title}</h4>
                     <p className='card-text'>Written by: {blog.author}</p>

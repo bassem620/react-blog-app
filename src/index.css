@@ -11,6 +11,11 @@
   margin-top: 80px;
 }
 
+.blog:hover{
+  scale: 1.01;
+  transition: 0.2s ;
+}
+
 /* Blog Details */
 .body-text{
   font-size: 19px !important;
@@ -30,7 +35,7 @@
   font-size: 20px;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.create input, .create textarea{
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
