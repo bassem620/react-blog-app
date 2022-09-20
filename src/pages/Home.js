@@ -2,7 +2,7 @@ import useFetch from '../useFetch';
 import BlogList from '../components/BlogList';
 
 const Home = () => {
-  const {error, isPending, data: blogs} = useFetch('http://localhost:8000/blogs');
+  const {error, isPending, data: blogs} = useFetch('https://blog-eg.herokuapp.com/blogs');
   return (
     <>
     <div className="nav-margin container">
